@@ -1,0 +1,16 @@
+﻿Item,Descrição Técnica,Quantidade,Especificação/Detalhes,Código do Fabricante
+1,Controlador Lógico Programável Siemens S7-1215,1,"14DI/10DO, CPU 24VDC, Ethernet integrada",6ES7215-1AG40-0XB0
+2,Interface Homem-Máquina (IHM) Basic Panel KTP400,1,"4.3'' Touch Screen, Ethernet, 24VDC",6AV2123-2DB03-0AX0
+3,Disjuntor Motor Tripolar 3RV2011-1KA10,2,"Icc=10kA, curva B, In=16A",3RV2011-1KA10
+4,Contator Principal 3RT2025-1BB40,2,"AC-3 17A, 24VDC, 3NA",3RT2025-1BB40
+5,Relé Térmico de Sobrecarga 3RU2126-4CB0,2,"Ajuste 9-12.5A, classe 10A",3RU2126-4CB0
+6,Chave Comutadora 2 Posições 3SU1050-0AB20-0AA0,1,"NA/NF, montagem 22mm",3SU1050-0AB20-0AA0
+7,Botoeira de Emergência Vermelha 3SU1000-1HF20-0AA0,1,"1NF+1NA, travamento por giro, 22mm",3SU1000-1HF20-0AA0
+8,Botoeira Pulsadora Verde (Liga) 3SU1001-0AB40-0AA0,2,"1NA, contato metálico, 22mm",3SU1001-0AB40-0AA0
+9,Botoeira Pulsadora Vermelha (Desliga) 3SU1001-0AB20-0AA0,2,"1NF, contato metálico, 22mm",3SU1001-0AB20-0AA0
+10,Relé de Interface 24VDC/230VAC 788-784,4,"24VDC/230VAC, 6A, LED indicador",788-784
+11,"Motor Trifásico 0,75CV 220/380V W22",2,"IV polos, 1740rpm, IP55",W22 Premium 00756ET3EM160S
+12,Inversor de Frequência CFW300 A07P0T2E20H1,1,"Potência 0,75CV, 220V trifásico",CFW300A07P0T2E20H1
+13,Fonte de Alimentação 24VDC/10A SITOP PSU100E,1,"Entrada 220VAC, saída 24VDC/10A",6EP1334-2BA20
+14,Cabo Ethernet RJ45 Cat5e 6GK1901-1BB10-2AB0,2,"Blindado, 2m comprimento",6GK1901-1BB10-2AB0
+15,Terminal Block 24 Vias 5STTE2324,10,"Parafuso, 2,5mm², azul/vermelho",5STTE2324

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI - Situação de Aprendizagem | Eletricista Industrial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <div>
+                        <h1>SENAI - Situação de Aprendizagem</h1>
+                        <p>Eletricista Industrial - CLP e IHM</p>
+                    </div>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-info">
+                        <span>Progresso do Curso</span>
+                        <span class="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="courseProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-tab="dashboard">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </button>
+                <button class="nav-tab" data-tab="objetivos">
+                    <i class="fas fa-bullseye"></i>
+                    Objetivos
+                </button>
+                <button class="nav-tab" data-tab="contexto">
+                    <i class="fas fa-industry"></i>
+                    Contextualização
+                </button>
+                <button class="nav-tab" data-tab="desafio">
+                    <i class="fas fa-cogs"></i>
+                    Desafio Prático
+                </button>
+                <button class="nav-tab" data-tab="roteiro">
+                    <i class="fas fa-route"></i>
+                    Roteiro
+                </button>
+                <button class="nav-tab" data-tab="materiais">
+                    <i class="fas fa-list-ul"></i>
+                    Materiais
+                </button>
+                <button class="nav-tab" data-tab="avaliacao">
+                    <i class="fas fa-chart-pie"></i>
+                    Avaliação
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Dashboard Tab -->
+            <div id="dashboard" class="tab-content active">
+                <section class="hero-section">
+                    <h2>Implementação de Sistema de Controle Automatizado</h2>
+                    <p>Para Linha de Produção Industrial</p>
+                </section>
+
+                <div class="info-cards">
+                    <div class="card info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Carga Horária</h3>
+                            <p class="card-value">60 horas</p>
+                        </div>
+                    </div>
+                    <div class="card info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Código</h3>
+                            <p class="card-value">SA-EI-CLP-001</p>
+                        </div>
+                    </div>
+                    <div class="card info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Modalidade</h3>
+                            <p class="card-value">Aprendizagem Industrial</p>
+                        </div>
+                    </div>
+                    <div class="card info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Unidade Curricular</h3>
+                            <p class="card-value">Controladores Lógicos Programáveis e IHM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-section">
+                    <div class="overview-card">
+                        <h3>Estratégia Pedagógica</h3>
+                        <p>Projeto prático que simula um ambiente industrial real, permitindo aos alunos desenvolverem competências técnicas através da implementação de sistemas de controle automatizado em duas estações de trabalho distintas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objetivos Tab -->
+            <div id="objetivos" class="tab-content">
+                <section class="section-header">
+                    <h2>Objetivos de Aprendizagem</h2>
+                    <p>Competências específicas a serem desenvolvidas durante o curso</p>
+                </section>
+
+                <div class="objectives-grid">
+                    <div class="card objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="objective-content">
+                            <h4>Programação CLP</h4>
+                            <p>Desenvolver e implementar programa de CLP em linguagem Ladder para controle de máquinas industriais</p>
+                        </div>
+                    </div>
+                    <div class="card objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="objective-content">
+                            <h4>Interface IHM</h4>
+                            <p>Configurar e programar Interface Homem-Máquina (IHM) integrada ao sistema de controle</p>
+                        </div>
+                    </div>
+                    <div class="card objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <div class="objective-content">
+                            <h4>Diagramas Técnicos</h4>
+                            <p>Elaborar diagramas elétricos e de comando seguindo normas técnicas NBR 5444/IEC 60617</p>
+                        </div>
+                    </div>
+                    <div class="card objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="objective-content">
+                            <h4>Segurança Operacional</h4>
+                            <p>Aplicar conceitos de segurança operacional com implementação de modos local/remoto</p>
+                        </div>
+                    </div>
+                    <div class="card objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="objective-content">
+                            <h4>Análise de Riscos</h4>
+                            <p>Realizar análise preliminar de riscos (APR) e implementar medidas de controle de segurança</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learning-timeline">
+                    <h3>Progressão do Aprendizado</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Fundamentos Teóricos</h4>
+                                <p>Conceitos básicos de automação e CLP</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Programação Prática</h4>
+                                <p>Desenvolvimento de lógicas de controle</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Integração de Sistemas</h4>
+                                <p>Conexão CLP, IHM e dispositivos de campo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Projeto Final</h4>
+                                <p>Implementação completa do sistema</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contextualização Tab -->
+            <div id="contexto" class="tab-content">
+                <section class="section-header">
+                    <h2>Contextualização Profissional</h2>
+                    <p>Conexão com o mercado de trabalho e práticas industriais</p>
+                </section>
+
+                <div class="context-content">
+                    <div class="market-importance">
+                        <h3>Importância no Mercado</h3>
+                        <p>A automação industrial representa um dos segmentos que mais cresce no mercado brasileiro. Profissionais especializados em CLP e IHM são fundamentais para a modernização de processos produtivos, garantindo maior eficiência, redução de custos e conformidade com normas de segurança.</p>
+                    </div>
+
+                    <div class="stations-grid">
+                        <div class="card station-card">
+                            <div class="station-header">
+                                <i class="fas fa-tint"></i>
+                                <h4>Estação 1 - Sistema de Bombeamento</h4>
+                            </div>
+                            <div class="station-content">
+                                <p>Controle automático de nível de tanque usando sensores</p>
+                                <ul class="station-features">
+                                    <li><i class="fas fa-check"></i> Partida/parada automática da bomba</li>
+                                    <li><i class="fas fa-check"></i> Alarmes visuais e sonoros</li>
+                                    <li><i class="fas fa-check"></i> Modo manual para manutenção</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card station-card">
+                            <div class="station-header">
+                                <i class="fas fa-conveyor-belt"></i>
+                                <h4>Estação 2 - Esteira Transportadora</h4>
+                            </div>
+                            <div class="station-content">
+                                <p>Controle de velocidade através de inversor de frequência</p>
+                                <ul class="station-features">
+                                    <li><i class="fas fa-check"></i> Detecção de presença de produto</li>
+                                    <li><i class="fas fa-check"></i> Contagem de peças transportadas</li>
+                                    <li><i class="fas fa-check"></i> Parada de emergência</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="competences-section">
+                        <h3>Competências Desenvolvidas</h3>
+                        <div class="competences-grid">
+                            <div class="competence-item">
+                                <i class="fas fa-user-check"></i>
+                                <span>Responsabilidade</span>
+                            </div>
+                            <div class="competence-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Proatividade</span>
+                            </div>
+                            <div class="competence-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Comunicação</span>
+                            </div>
+                            <div class="competence-item">
+                                <i class="fas fa-users"></i>
+                                <span>Liderança</span>
+                            </div>
+                            <div class="competence-item">
+                                <i class="fas fa-balance-scale"></i>
+                                <span>Ética</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desafio Prático Tab -->
+            <div id="desafio" class="tab-content">
+                <section class="section-header">
+                    <h2>Desafio Prático</h2>
+                    <p>Cenário industrial real para aplicação dos conhecimentos</p>
+                </section>
+
+                <div class="challenge-scenario">
+                    <div class="scenario-header">
+                        <i class="fas fa-industry"></i>
+                        <h3>Empresa MetalTech Indústria</h3>
+                    </div>
+                    <div class="scenario-content">
+                        <p>A empresa MetalTech precisa modernizar sua linha de produção implementando um sistema de controle automatizado. O projeto envolve duas estações críticas que devem operar de forma integrada, garantindo eficiência e segurança operacional.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-stations">
+                    <div class="card challenge-station" data-station="1">
+                        <div class="station-info">
+                            <div class="station-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <div class="station-details">
+                                <h4>Sistema de Bombeamento</h4>
+                                <p>Automatização do controle de nível</p>
+                            </div>
+                        </div>
+                        <div class="station-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-layer-group"></i>
+                                <span>3 níveis de controle</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bell"></i>
+                                <span>Sistema de alarmes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card challenge-station" data-station="2">
+                        <div class="station-info">
+                            <div class="station-icon">
+                                <i class="fas fa-conveyor-belt"></i>
+                            </div>
+                            <div class="station-details">
+                                <h4>Esteira Transportadora</h4>
+                                <p>Controle de velocidade variável</p>
+                            </div>
+                        </div>
+                        <div class="station-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Inversor de frequência</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-calculator"></i>
+                                <span>Contador de peças</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="requirements-section">
+                    <h3>Requisitos do Sistema</h3>
+                    <div class="requirements-list">
+                        <div class="requirement-item">
+                            <input type="checkbox" id="req1">
+                            <label for="req1">Programação em linguagem Ladder</label>
+                        </div>
+                        <div class="requirement-item">
+                            <input type="checkbox" id="req2">
+                            <label for="req2">Interface IHM para operação</label>
+                        </div>
+                        <div class="requirement-item">
+                            <input type="checkbox" id="req3">
+                            <label for="req3">Sistema de segurança integrado</label>
+                        </div>
+                        <div class="requirement-item">
+                            <input type="checkbox" id="req4">
+                            <label for="req4">Modos local e remoto</label>
+                        </div>
+                        <div class="requirement-item">
+                            <input type="checkbox" id="req5">
+                            <label for="req5">Documentação técnica completa</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Roteiro Tab -->
+            <div id="roteiro" class="tab-content">
+                <section class="section-header">
+                    <h2>Roteiro Experimental</h2>
+                    <p>Guia passo a passo para execução do projeto</p>
+                </section>
+
+                <div class="timeline-container">
+                    <div class="timeline-header">
+                        <div class="timeline-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" id="totalHours">60</span>
+                                <span class="stat-label">Total de Horas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="completedSteps">0</span>
+                                <span class="stat-label">Etapas Concluídas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Total de Etapas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experimental-timeline">
+                        <div class="timeline-step" data-step="1">
+                            <div class="step-marker">
+                                <span class="step-number">1</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Planejamento e APR</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 8h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Análise do escopo</li>
+                                        <li>Elaboração da APR</li>
+                                        <li>Cronograma</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="2">
+                            <div class="step-marker">
+                                <span class="step-number">2</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Padronização de Tags</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 4h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Definição nomenclatura</li>
+                                        <li>Organização lógica</li>
+                                        <li>Tabela símbolos</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="3">
+                            <div class="step-marker">
+                                <span class="step-number">3</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Diagramas Elétricos</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 8h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Diagrama unifilar</li>
+                                        <li>Diagramas comando</li>
+                                        <li>Esquemas ligação</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="4">
+                            <div class="step-marker">
+                                <span class="step-number">4</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Configuração Hardware</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 6h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Projeto TIA Portal</li>
+                                        <li>Config CLP</li>
+                                        <li>Config IHM</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="5">
+                            <div class="step-marker">
+                                <span class="step-number">5</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Programação Ladder</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 12h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Lógica controle</li>
+                                        <li>Intertravamentos</li>
+                                        <li>Blocos função</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="6">
+                            <div class="step-marker">
+                                <span class="step-number">6</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Programação IHM</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 8h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Telas WinCC</li>
+                                        <li>Navegação</li>
+                                        <li>Alarmes</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="7">
+                            <div class="step-marker">
+                                <span class="step-number">7</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Segurança</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 6h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Chave LOCAL/REMOTO</li>
+                                        <li>Emergências</li>
+                                        <li>Alarmes</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="8">
+                            <div class="step-marker">
+                                <span class="step-number">8</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Montagem Física</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 8h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Montagem painel</li>
+                                        <li>Conexões</li>
+                                        <li>Testes</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="9">
+                            <div class="step-marker">
+                                <span class="step-number">9</span>
+                                <div class="step-connector"></div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Comissionamento</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 6h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Download programa</li>
+                                        <li>Testes I/O</li>
+                                        <li>Integração</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step" data-step="10">
+                            <div class="step-marker">
+                                <span class="step-number">10</span>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Documentação</h4>
+                                    <div class="step-info">
+                                        <span class="step-hours"><i class="fas fa-clock"></i> 4h</span>
+                                        <button class="btn btn--sm step-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-details hidden">
+                                    <ul class="step-activities">
+                                        <li>Manual operação</li>
+                                        <li>Relatório técnico</li>
+                                        <li>Apresentação</li>
+                                    </ul>
+                                    <div class="step-actions">
+                                        <button class="btn btn--sm btn--outline step-complete">
+                                            <i class="fas fa-check"></i> Marcar como Concluída
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Materiais Tab -->
+            <div id="materiais" class="tab-content">
+                <section class="section-header">
+                    <h2>Lista de Materiais</h2>
+                    <p>Equipamentos e componentes necessários para o projeto</p>
+                </section>
+
+                <div class="materials-controls">
+                    <div class="search-filter">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="materialSearch" placeholder="Buscar materiais...">
+                        </div>
+                        <button class="btn btn--primary" id="exportList">
+                            <i class="fas fa-download"></i>
+                            Exportar Lista
+                        </button>
+                    </div>
+                </div>
+
+                <div class="materials-table-container">
+                    <table class="materials-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Descrição</th>
+                                <th>Qtd</th>
+                                <th>Especificação</th>
+                                <th>Código</th>
+                            </tr>
+                        </thead>
+                        <tbody id="materialsTableBody">
+                            <tr>
+                                <td>1</td>
+                                <td>CLP Siemens S7-1215</td>
+                                <td>1</td>
+                                <td>14DI/10DO, CPU 24VDC</td>
+                                <td>6ES7215-1AG40-0XB0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>IHM Basic Panel KTP400</td>
+                                <td>1</td>
+                                <td>4.3'' Touch Screen</td>
+                                <td>6AV2123-2DB03-0AX0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Disjuntor Motor</td>
+                                <td>2</td>
+                                <td>Icc=10kA, In=16A</td>
+                                <td>3RV2011-1KA10</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Contator Principal</td>
+                                <td>2</td>
+                                <td>AC-3 17A, 24VDC</td>
+                                <td>3RT2025-1BB40</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Relé Térmico</td>
+                                <td>2</td>
+                                <td>Ajuste 9-12.5A</td>
+                                <td>3RU2126-4CB0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="materials-summary">
+                    <div class="summary-card">
+                        <h4>Resumo da Lista</h4>
+                        <div class="summary-stats">
+                            <div class="summary-item">
+                                <span class="summary-label">Total de Itens:</span>
+                                <span class="summary-value" id="totalItems">5</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Componentes Eletrônicos:</span>
+                                <span class="summary-value">2</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Dispositivos de Proteção:</span>
+                                <span class="summary-value">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avaliação Tab -->
+            <div id="avaliacao" class="tab-content">
+                <section class="section-header">
+                    <h2>Sistema de Avaliação</h2>
+                    <p>Critérios e distribuição das notas do curso</p>
+                </section>
+
+                <div class="evaluation-content">
+                    <div class="evaluation-chart-container">
+                        <div class="chart-wrapper">
+                            <h3>Distribuição das Notas</h3>
+                            <div class="chart-container" style="position: relative; height: 400px;">
+                                <canvas id="evaluationChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-breakdown">
+                            <h4>Detalhamento da Avaliação</h4>
+                            <div class="breakdown-item">
+                                <div class="breakdown-header">
+                                    <span class="breakdown-title">Projeto Prático</span>
+                                    <span class="breakdown-percentage">40%</span>
+                                </div>
+                                <p class="breakdown-description">Desenvolvimento completo do sistema CLP/IHM</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <div class="breakdown-header">
+                                    <span class="breakdown-title">Avaliação Teórica</span>
+                                    <span class="breakdown-percentage">25%</span>
+                                </div>
+                                <p class="breakdown-description">Conhecimentos técnicos e normativos</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <div class="breakdown-header">
+                                    <span class="breakdown-title">Trabalho em Equipe</span>
+                                    <span class="breakdown-percentage">20%</span>
+                                </div>
+                                <p class="breakdown-description">Colaboração e soft skills</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <div class="breakdown-header">
+                                    <span class="breakdown-title">Apresentação</span>
+                                    <span class="breakdown-percentage">15%</span>
+                                </div>
+                                <p class="breakdown-description">Comunicação e defesa do projeto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="competences-evaluation">
+                        <h3>Competências Socioemocionais</h3>
+                        <div class="competences-checklist">
+                            <div class="competence-check">
+                                <input type="checkbox" id="comp1">
+                                <label for="comp1">
+                                    <i class="fas fa-user-check"></i>
+                                    <span>Responsabilidade</span>
+                                </label>
+                            </div>
+                            <div class="competence-check">
+                                <input type="checkbox" id="comp2">
+                                <label for="comp2">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Proatividade</span>
+                                </label>
+                            </div>
+                            <div class="competence-check">
+                                <input type="checkbox" id="comp3">
+                                <label for="comp3">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Comunicação</span>
+                                </label>
+                            </div>
+                            <div class="competence-check">
+                                <input type="checkbox" id="comp4">
+                                <label for="comp4">
+                                    <i class="fas fa-users"></i>
+                                    <span>Liderança</span>
+                                </label>
+                            </div>
+                            <div class="competence-check">
+                                <input type="checkbox" id="comp5">
+                                <label for="comp5">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <span>Ética</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-criteria">
+                        <h3>Critérios de Avaliação Detalhados</h3>
+                        <div class="criteria-grid">
+                            <div class="card criteria-card">
+                                <div class="criteria-header">
+                                    <i class="fas fa-code"></i>
+                                    <h4>Projeto Prático</h4>
+                                </div>
+                                <ul class="criteria-list">
+                                    <li>Funcionalidade do programa CLP</li>
+                                    <li>Interface IHM intuitiva</li>
+                                    <li>Implementação de segurança</li>
+                                    <li>Qualidade da montagem</li>
+                                </ul>
+                            </div>
+                            <div class="card criteria-card">
+                                <div class="criteria-header">
+                                    <i class="fas fa-book-open"></i>
+                                    <h4>Conhecimento Teórico</h4>
+                                </div>
+                                <ul class="criteria-list">
+                                    <li>Normas técnicas aplicáveis</li>
+                                    <li>Conceitos de automação</li>
+                                    <li>Segurança operacional</li>
+                                    <li>Documentação técnica</li>
+                                </ul>
+                            </div>
+                            <div class="card criteria-card">
+                                <div class="criteria-header">
+                                    <i class="fas fa-users"></i>
+                                    <h4>Competências Sociais</h4>
+                                </div>
+                                <ul class="criteria-list">
+                                    <li>Colaboração efetiva</li>
+                                    <li>Comunicação assertiva</li>
+                                    <li>Resolução de problemas</li>
+                                    <li>Pontualidade e organização</li>
+                                </ul>
+                            </div>
+                            <div class="card criteria-card">
+                                <div class="criteria-header">
+                                    <i class="fas fa-presentation"></i>
+                                    <h4>Apresentação</h4>
+                                </div>
+                                <ul class="criteria-list">
+                                    <li>Clareza na exposição</li>
+                                    <li>Domínio do conteúdo</li>
+                                    <li>Uso de recursos visuais</li>
+                                    <li>Interação com audiência</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
